@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dev Fest 2019 Bangalore</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pref_dark_mode">DarkMode</string>
+    <string name="pref_online_database_version">OnlineDatabaseVersion</string>
+    <string name="pref_github">GitHub</string>
+    <string name="pref_reminder">Reminder</string>
+</resources>

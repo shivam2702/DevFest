@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dark_mode_array">
+        <item>Auto</item>
+        <item>Light Mode</item>
+        <item>Dark Mode</item>
+    </string-array>
+
+    <string-array name="dark_mode_index">
+        <item>-1</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

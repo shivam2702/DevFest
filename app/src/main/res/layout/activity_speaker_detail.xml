@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinator_layout_session_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.SpeakerDetail">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Toolbar
+                    android:id="@+id/my_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+            <cn.carbs.android.avatarimageview.library.AvatarImageView
+                    android:src="@drawable/seperator"
+                    android:transitionName="speakerImage"
+                    android:layout_width="128dp"
+                    android:id="@+id/image"
+                    android:padding="5dp"
+                    app:aiv_BoarderWidth="2dp"
+                    app:aiv_ShowBoarder="false"
+                    app:aiv_TextSizeRatio="0.4"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/my_toolbar"/>
+
+
+            <TextView
+                    android:id="@+id/name"
+                    style="@style/TextAppearance.devfest.H1"
+                    android:text="Shivam"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/image" app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginEnd="8dp" android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/my_toolbar"/>
+
+            <TextView
+                    android:id="@+id/my_title"
+                    style="@style/TextAppearance.devfest.Body"
+                    android:text="Android Software Developer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/name" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/image"/>
+
+            <TextView
+                    android:text="Google India "
+                    android:layout_width="0dp"
+                    android:id="@+id/company"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/my_title"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:textAppearance="@style/TextAppearance.devfest.Body"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/image"/>
+
+
+            <TextView
+                    android:text="Bio"
+                    android:layout_width="0dp"
+                    style="@style/TextAppearance.devfest.Subhead"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bio_header"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/company"/>
+
+
+            <TextView
+                    android:text="Description Keynote: How and Why Communities Can Help!"
+                    android:layout_width="0dp"
+                    android:id="@+id/long_description"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.devfest.Body_orig"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/bio_header"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/socialRecycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerview"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_social" />
+
+            <TextView
+                    android:text="Sessions"
+                    android:layout_width="0dp"
+                    style="@style/TextAppearance.devfest.Subhead"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/session_header"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toBottomOf="@+id/long_description" android:layout_marginTop="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_session"
+                    tools:itemCount="3"
+                    app:layout_constraintTop_toBottomOf="@+id/session_header"
+                    android:id="@+id/recyclerview"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

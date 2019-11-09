@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/action_schedule"
+            android:enabled="true"
+            android:icon="@drawable/ic_schedule"
+            android:title="Sessions"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_speaker"
+            android:enabled="true"
+            android:icon="@drawable/ic_speaker"
+            android:title="Speakers"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_home"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            android:checked="true"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_sponsor"
+            android:enabled="true"
+            android:icon="@drawable/ic_sponsor"
+            android:title="Sponsors"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_team"
+            android:enabled="true"
+            android:icon="@drawable/ic_team"
+            android:title="Team"
+            app:showAsAction="ifRoom"/>
+</menu>

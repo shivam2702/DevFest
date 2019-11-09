@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme.DayNight" parent="AppTheme.Light"/>
+
+    <style name="AppTheme.DayNight" parent="Base.AppTheme.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">?colorPrimary</item>
+        <item name="android:textViewStyle">@style/Widget.TextView</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="AppTheme.DayNight">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="AppTheme.PopupTheme" parent="ThemeOverlay.MaterialComponents.Light"/>
+
+    <style name="TextAppearance.devfest.Names" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.devfest.ListSecondary" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="Widget.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="titleTextAppearance">@style/TextAppearance.devfest.ToolbarTitle</item>
+        <item name="popupTheme">@style/AppTheme.PopupTheme</item>
+    </style>
+
+    <style name="TextAppearance.devfest.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="TextAppearance.devfest.Tab" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textColor">@drawable/tab_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.TextView" parent="@style/TextAppearance.MaterialComponents.Body2">
+        <item name="android:textAppearance">@style/TextAppearance.devfest.Body</item>
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+    </style>
+
+    <style name="TextAppearance.devfest.Body" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.devfest.ShortText" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.devfest.Body_orig" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="TextAppearance.devfest.H1" parent="@style/TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.devfest.Subhead" parent="@style/TextAppearance.devfest.Body">
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.devfest.SessionTitle.Display" parent="@style/TextAppearance.AppCompat.Display1">
+        <item name="android:fontFamily">@font/work_sans</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.devfest.Time" parent="@style/TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.devfest.Meridian" parent="@style/TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+</resources>

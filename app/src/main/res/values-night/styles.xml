@@ -1,0 +1,3 @@
+<resources>
+    <style name="Base.AppTheme.DayNight" parent="AppTheme.Dark"/>
+</resources>
